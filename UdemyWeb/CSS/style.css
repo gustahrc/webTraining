@@ -1,0 +1,31 @@
+/* Selector {
+    Property: Value;
+}    */
+
+body{
+
+}
+/* rgb = natural rgb
+rgba = rgb with opacitity */
+
+h2 {
+    color:red;
+    background-color: black;
+    border: solid 5px purple;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    display: inline;
+}
+
+.webtext{
+    border: 5px;
+
+}
+
+#div1{
+    background: rgba(120, 0, 25, 0.2)
+}

@@ -1,0 +1,17 @@
+- SAME ENVIRONMEMT : Docker disponibiliza um ambiente para aplicação através de uma máquina de virtualização, ou seja, se rodou no seu computador roda em qualquer lugar
+- SANDBOX PROJECTS: Sandbox cada projeto e deixa-os secretos para maior segurança e elimina potenciais conflitos entre projetos
+- JUST WORKS: DOCKER te da essas funcionalidades sem tem quer monitorar diretamente e não é necessário o download de dependencias, etc
+
+
+CONTAINERS: CÓDIGO E VIRTUALIZAÇÃO DENTRO DE CONTAINERS
+	. A Virtual machine tem seu servidor, HostOS e Hypervisor e sua camada de kernel é acima do Hypervisor o que a habilita o direcionamento de recursos 
+	. Tudo na área de Kernel é compartilhado considerando que as versões do linux utilizam o mesmo kernel. Então os ambientes são criados acima da camada do OS com algumas features do filesystem do linux. 
+	. Dockers startam rápido em segundos ou minutos. Usa menos recursos como disk space e memoria ram
+	. Se escolhe uma imagem para o dockerFile - geralemente ja tem varias imagens ja prontas. dockerfile é um script para que seja colocada a imagem de um sistema em alguma hora, ex: um sistema que roda o php e o apache.
+	. Melhores dockerfiles a se procurar sao oficiais que estao nos repositorios
+	. FROM php:7.0 - apache - versao da imagem usada
+	. COPY src/ /var/www/html - seus arquivos
+	. EXPOSE 80 - especifica a port 
+	. pode se escolher um sistema operacional e depois instalação das dependencias
+	. ou seja o docker contem uma virtualização de cada imagem e depois se prepara a imagem como se estivesse instalando as dependencias em um SO.
+	. Montar um diretório local para utilização e atualização do docker de acordo com atualizações código. Após o deploy do código é necessário após a cópia quando se sai da fase de desenvolvimento. 
